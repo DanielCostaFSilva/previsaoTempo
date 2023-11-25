@@ -3,20 +3,47 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
     <title>Previsão do Tempo</title>
   </head>
   <body>
-    <div>
-      <input type="text" , placeholder="Digite o nome da cidade" />
-      <button>buscar</button>
-      <h2>Tempo São Paulo</h2>
-      <p>21 graus</p>
-      <img
-        src="https://w7.pngwing.com/pngs/606/544/png-transparent-rain-computer-icons-weather-symbol-cloud-rain-text-cloud-weather-forecasting.png"
-        alt="icone-info-tempo"
-        srcset=""
+    <div class="container__big-box">
+      <input
+        class="input-city"
+        type="text"
+        ,
+        placeholder="Digite o nome da cidade"
       />
-      <p>Umidade 76%</p>
+      <button class="button-search">
+        <img
+          class="img-search"
+          src="https://www.svgrepo.com/show/488200/find.svg"
+          alt="buscar"
+          srcset=""
+        />
+      </button>
+
+      <div class="container__medium-box">
+        <h2 class="city">Tempo São Paulo</h2>
+        <p class="weather">21 graus</p>
+
+        <div class="container__small-box">
+          <img
+            class="img-forecast"
+            src="https://openweathermap.org/img/wn/04n.png"
+            alt="icone-info-tempo"
+            srcset=""
+          />
+          <p class="text-forecast">Nublado</p>
+        </div>
+        <p class="humidity">Umidade 76%</p>
+      </div>
     </div>
   </body>
 </html>
