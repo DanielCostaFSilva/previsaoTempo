@@ -10,17 +10,13 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles.css" />
+    <script src="./scripts.js"></script>
     <title>Previsão do Tempo</title>
   </head>
   <body>
     <div class="container__big-box">
-      <input
-        class="input-city"
-        type="text"
-        ,
-        placeholder="Digite o nome da cidade"
-      />
-      <button class="button-search">
+      <input class="input-city" placeholder="Digite o nome da cidade" />
+      <button class="button-search" onclick="onClickButton()">
         <img
           class="img-search"
           src="https://www.svgrepo.com/show/488200/find.svg"
@@ -30,8 +26,8 @@
       </button>
 
       <div class="container__medium-box">
-        <h2 class="city">Tempo São Paulo</h2>
-        <p class="weather">21 graus</p>
+        <h2 class="city">Tempo em</h2>
+        <p class="weather">ºC</p>
 
         <div class="container__small-box">
           <img
@@ -40,9 +36,9 @@
             alt="icone-info-tempo"
             srcset=""
           />
-          <p class="text-forecast">Nublado</p>
+          <p class="text-forecast">Tempo</p>
         </div>
-        <p class="humidity">Umidade 76%</p>
+        <p class="humidity">Umidade:</p>
       </div>
     </div>
   </body>
